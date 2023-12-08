@@ -1,16 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+// String
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$x = "Hello world!";
+$y = 'Hello world!';
 
-<body>
-    <?php
-    echo "Hello World!";
-    ?>
-</body>
+echo $x;
+echo "<br>";
+var_dump($y);
 
-</html>
+// Integer
+
+echo "<br>";
+$x = 5985;
+var_dump($x);
+
+// Float
+
+echo "<br>";
+$x = 10.365;
+var_dump($x);
+
+// Boolean
+
+echo "<br>";
+$x = true;
+var_dump($x);
+
+// Array
+echo "<br>";
+
+$cars = array("Volvo", "BMW", "Toyota");
+var_dump($cars);
