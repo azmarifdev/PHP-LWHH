@@ -1,17 +1,5 @@
 <?php
 
-/*
-$userAge = '21';
-$minimumAge = 18;
-
-if ((int) $userAge >= $minimumAge) {
-    echo "Vote Accepted";
-} else {
-
-    echo "Sorry";
-}
-*/
-
 /// converting values to boolean
 
 $bool = "string"; // true
@@ -57,3 +45,35 @@ $string = (string) null; // ""
 $string = (string) ""; // ""
 $string = (string) [34, "arif", true]; //  "Array"
 // echo var_dump($string);
+
+/// converting values to array
+
+$array = (array) "apple"; // array(1) { [0]=> string(5) "apple" }
+$array = (array) true; // array(1) { [0]=> bool(true) }
+$array = (array) false; // array(1) { [0]=> bool(false) }
+$array = (array) 500; // array(1) { [0]=> int(500) }
+$array = (array) null; // array(0) { }
+$array = (array) ''; // array(1) { [0]=> string(0) "" }
+
+// echo var_dump($array);
+// print_r($array);
+
+/// converting object to array
+
+class Twitter
+{
+    public $username;
+    protected $tweet;
+    private $joiningDate;
+}
+
+// var_dump((array) new Twitter());
+// Ans ==> array(3) { ["username"]=> NULL ["*tweet"]=> NULL ["TwitterjoiningDate"]=> NULL }
+
+/// converting array to object
+
+$details = (object) ["married" => false, "name" => "arif", "age" => 25];
+// var_dump($details);
+// Ans ==> object(stdClass)#1 (3) { ["married"]=> bool(false) ["name"]=> string(4) "arif" ["age"]=> int(25) }
+
+// var_dump($details -> name); // string(4) "arif"
