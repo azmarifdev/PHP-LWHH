@@ -76,4 +76,4 @@ $details = (object) ["married" => false, "name" => "arif", "age" => 25];
 // var_dump($details);
 // Ans ==> object(stdClass)#1 (3) { ["married"]=> bool(false) ["name"]=> string(4) "arif" ["age"]=> int(25) }
 
-// var_dump($details -> name); // string(4) "arif"
+var_dump($details -> name); // string(4) "arif"
