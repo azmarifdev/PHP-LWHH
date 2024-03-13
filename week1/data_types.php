@@ -2,7 +2,7 @@
 // String
 
 $x = "Hello world!";
-$y = 'Hello world!';
+$y = 'Hello world!'; 
 
 echo $x;
 echo "<br>";
